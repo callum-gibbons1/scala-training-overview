@@ -17,7 +17,12 @@ object Monads {
 	}
 
 	def addOneToOptionalNum(optionalNum: Option[Int]) = {
-		optionalNum.map(num => num + 1)
+		val newValue = optionalNum.map(num => num + 1)
+
+		println(optionalNum)
+		println(newValue)
+
+		newValue
 	}
 
 }
